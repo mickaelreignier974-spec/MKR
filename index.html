@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MKR — Mickaël Reignier, Photographe</title>
+<meta name="description" content="MKR, photographe indépendant. Portraits, sport, événements et mariages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a href="#accueil" class="nav__logo" data-target="accueil">
+    <img src="logo-200.png" alt="MKR" class="nav__logo-img">
+    <span class="nav__logo-sub">Mickaël Reignier — Photographe</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#accueil" data-target="accueil">Accueil</a>
+    <a href="#portfolio" data-target="portfolio">Portfolio</a>
+    <a href="#apropos" data-target="apropos">À propos</a>
+    <a href="#contact" data-target="contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ACCUEIL -->
+  <section class="view active" id="accueil" data-view="accueil">
+    <div class="hero">
+      <div class="hero__frame">
+        <div class="hero__image ph-img is-clickable" id="heroImage">
+          <img src="sport-01.jpg" alt="Portrait noir et blanc, regard vers le sol" style="object-position:center 20%;">
+          <span class="hero__frame-no">N° 001</span>
+        </div>
+      </div>
+      <div class="hero__text">
+        <p class="eyebrow">Photographe indépendant</p>
+        <h1 class="hero__title">Fixer l'instant,<br><em>avant qu'il ne s'échappe.</em></h1>
+        <p class="hero__lead">Mickaël Reignier, photographe. Sport, mariages et soirs d'événements — MKR capture ce qui ne se rejoue pas deux fois.</p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn btn--primary" data-target="portfolio">Voir le portfolio</a>
+          <a href="#contact" class="btn btn--ghost" data-target="contact">Réserver une séance</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="themes-strip">
+      <a href="#portfolio" class="theme-tile theme-tile--sport" data-target="portfolio" data-filter="sport">
+        <img class="theme-tile__img" src="sport-10.jpg" alt="" style="object-position:center 20%;">
+        <span class="theme-tile__label">Sport</span>
+      </a>
+      <a href="#portfolio" class="theme-tile theme-tile--mma" data-target="portfolio" data-filter="mma">
+        <img class="theme-tile__img" src="mma-04.jpg" alt="" style="object-position:center 20%;">
+        <span class="theme-tile__label">MMA</span>
+      </a>
+      <a href="#portfolio" class="theme-tile theme-tile--shooting" data-target="portfolio" data-filter="shooting">
+        <img class="theme-tile__img" src="shooting-01.jpg" alt="" style="object-position:center 25%;">
+        <span class="theme-tile__label">Shooting</span>
+      </a>
+      <a href="#portfolio" class="theme-tile theme-tile--mariage" data-target="portfolio" data-filter="mariage">
+        <img class="theme-tile__img" src="mariage-01.jpg" alt="" style="object-position:center 25%;">
+        <span class="theme-tile__label">Mariage</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="view" id="portfolio" data-view="portfolio">
+    <div class="view__head">
+      <p class="eyebrow">Planche contact</p>
+      <h2>Portfolio</h2>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter is-active" data-filter="tous">Tous</button>
+      <button class="filter" data-filter="sport">Sport</button>
+      <button class="filter" data-filter="mma">MMA</button>
+      <button class="filter" data-filter="shooting">Shooting</button>
+      <button class="filter" data-filter="mariage">Mariage</button>
+    </div>
+
+    <div class="proof-sheet" id="proofSheet">
+      <!-- Les vignettes sont générées en JS à partir de PORTFOLIO_DATA (js/main.js) -->
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="view" id="apropos" data-view="apropos">
+    <div class="about">
+      <div class="about__portrait ph-img is-clickable" id="aboutPortrait">
+        <img src="portrait-mickael.jpg" alt="Portrait de Mickaël Reignier" style="object-position:center 20%;">
+        <span class="hero__frame-no">N° 000</span>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">À propos</p>
+        <h2>Mickaël Reignier</h2>
+        <p class="about__lead">Photographe indépendant, fondateur de MKR.</p>
+        <p>Je photographie ce qui bouge vite et ne se refait pas : une mêlée qui s'écroule, un but à la 89e minute, un « oui » chuchoté, une salle qui se lève d'un coup. MKR est né de cette idée simple — être au bon endroit, une fraction de seconde avant que ça arrive.</p>
+        <p>Basé en Occitanie, je me déplace pour vos clubs, vos mariages et vos événements, en France comme ailleurs.</p>
+        <ul class="about__facts">
+          <li><span>Spécialités</span>Sport · Événementiel · MMA · Mariage</li>
+          <li><span>Zone</span>Occitanie &amp; déplacements sur demande</li>
+          <li><span>Format</span>Reportage, portrait, retouche &amp; livraison numérique</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="view" id="contact" data-view="contact">
+    <div class="view__head">
+      <p class="eyebrow">Discutons de votre projet</p>
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact__grid">
+      <form class="contact__form" id="contactForm" action="https://formsubmit.co/mkrpicsoccitanie@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message — site MKR">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+
+        <label>
+          Nom
+          <input type="text" name="Nom" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="Email" required>
+        </label>
+        <label>
+          Type de séance
+          <select name="Type de séance">
+            <option>Sport</option>
+            <option>Événement</option>
+            <option>Shooting</option>
+            <option>Mariage</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="Message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Envoyer le message</button>
+        <p class="contact__status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+      <div class="contact__info">
+        <p class="eyebrow">Coordonnées</p>
+        <ul>
+          <li><span>Email</span><a href="mailto:mkrpicsoccitanie@gmail.com">mkrpicsoccitanie@gmail.com</a></li>
+          <li><span>Téléphone</span><a href="tel:+33661482024">06 61 48 20 24</a></li>
+          <li><span>Instagram</span><a href="https://instagram.com/mkr_pics" target="_blank" rel="noopener">@mkr_pics</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>MKR © <span id="year"></span> — Mickaël Reignier, photographe indépendant</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
