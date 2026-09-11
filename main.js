@@ -43,11 +43,11 @@ const PORTFOLIO_DATA = [
   { cat: "shooting", label: "Shooting équipe — terrain", src: "shooting-06.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Shooting équipe — devant la fresque", src: "shooting-07.jpg", pos: "center 20%" },
 
-{ cat: "mariage", label: "Petite fille", src: "mariage-05.jpg", pos: "center 20%" },
-   { cat: "mariage", label: "Fille sourire", src: "mariage-04.jpg", pos: "center 20%" },
-   { cat: "mariage", label: "Cortège sous les ombrelles", src: "mariage-01.jpg", pos: "center 20%" },
+  { cat: "mariage", label: "Cortège sous les ombrelles", src: "mariage-01.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Regards, noir et blanc", src: "mariage-02.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Portrait — lunettes miroir", src: "mariage-03.jpg", pos: "center 25%" },
+  { cat: "mariage", label: "Fille sourire", src: "mariage-04.jpg", pos: "center 20%" },
+  { cat: "mariage", label: "Petite fille", src: "mariage-05.jpg", pos: "center 20%" },
 ];
 
 /* ---------- 2. Rendu du portfolio ---------- */
