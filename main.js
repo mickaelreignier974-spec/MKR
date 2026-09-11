@@ -8,7 +8,6 @@
    à la place des vignettes de démonstration.
    "size: tall" donne une vignette plus verticale ; sans "size",
    la vignette prend le cadrage portrait standard. */
-```js
 const PORTFOLIO_DATA = [
   { cat: "sport", label:"1", src: "sport-01.jpg", pos: "center 20%" },
   { cat: "sport", label:"2", src: "sport-02.jpg", pos: "center 15%" },
@@ -52,8 +51,6 @@ const PORTFOLIO_DATA = [
   { cat: "mariage", label:"3", src: "mariage-03.jpg", pos: "center 25%" },
   { cat: "mariage", label:"4", src: "mariage-04.jpg", pos: "center 20%" },
   { cat: "mariage", label:"5", src: "mariage-05.jpg", pos: "center 20%" }
-];
-```
 
 /* ---------- 2. Rendu du portfolio ---------- */
 function renderPortfolio(){
