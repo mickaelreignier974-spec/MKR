@@ -43,8 +43,8 @@ const PORTFOLIO_DATA = [
   { cat: "shooting", label: "Silhouette sur le conteneur, noir et blanc", src: "shooting-05.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Shooting équipe — terrain", src: "shooting-06.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Shooting équipe — devant la fresque", src: "shooting-07.jpg", pos: "center 20%" },
-  { cat: "shooting", label: "jen 1", src: "shooting-08.jpg.jpeg", pos: "center 20%" },
-  { cat: "shooting", label: "jen", src: "shooting-09.jpg.jpeg", pos: "center 20%" },
+  { cat: "shooting", label: "jen", src: "shooting-08.jpg.jpeg", pos: "center 20%" },
+  { cat: "shooting", label: "jen1", src: "shooting-09.jpg.jpeg", pos: "center 20%" },
  
   { cat: "mariage", label: "Cortège sous les ombrelles", src: "mariage-01.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Regards, noir et blanc", src: "mariage-02.jpg", pos: "center 20%" },
