@@ -264,31 +264,6 @@ function playTransition(onMid){
   }, FADE_DURATION);
 }
 
-/* ---------- 5. Formulaire de contact ---------- */
-const form = document.getElementById("contactForm");
-const status = document.getElementById("formStatus");
-if (form){
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    status.textContent = "Envoi en cours…";
-    try{
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-      });
-      if (res.ok){
-        status.textContent = "Message envoyé, merci ! Je reviens vers vous rapidement.";
-        form.reset();
-      } else {
-        status.textContent = "Le message n'a pas pu être envoyé — réessayez ou écrivez-moi directement par e-mail.";
-      }
-    }catch(err){
-      status.textContent = "Le message n'a pas pu être envoyé — réessayez ou écrivez-moi directement par e-mail.";
-    }
-  });
-}
-
 /* ---------- 6. Init ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 renderPortfolio();
