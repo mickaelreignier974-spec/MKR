@@ -47,8 +47,6 @@ const PORTFOLIO_DATA = [
   { cat: "shooting", label:"8", src: "shooting-08.jpg.jpeg", pos: "center 20%" },
   { cat: "shooting", label:"9", src: "shooting-09.jpg.jpeg", pos: "center 20%" },
   { cat: "shooting", label:"1", src: "mma-01.jpg", pos: "center 20%" },
-  { cat: "shooting", label:"2", src: "mma-02.jpg", pos: "center 20%" },
-  { cat: "shooting", label:"3", src: "mma-03.jpg", pos: "center 25%" },
   { cat: "shooting", label:"4", src: "mma-04.jpg", pos: "center 20%" },
   { cat: "shooting", label:"5", src: "mma-05.jpg", pos: "center 25%" },
   { cat: "shooting", label:"6", src: "mma-06.jpg", pos: "center 30%" },
