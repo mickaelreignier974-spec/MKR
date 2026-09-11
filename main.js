@@ -72,12 +72,9 @@ function renderPortfolio(){
       wrap.dataset.ph = "Photo à remplacer";
     }
 
-    const tag = document.createElement("span");
-    tag.className = "tag";
-    tag.textContent = `${item.label} — N° ${String(i + 1).padStart(3, "0")}`;
-
+    
     el.appendChild(wrap);
-    el.appendChild(tag);
+   
     if (item.src){
       el.addEventListener("click", () => openLightbox(i));
     }
