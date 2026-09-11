@@ -38,7 +38,7 @@ const PORTFOLIO_DATA = [
   { cat: "shooting", label: "Portrait nocturne, bonnet blanc", src: "shooting-01.jpg", pos: "center 20%" },
   { cat: "shooting", label: "Duo, ceinture de champion", src: "shooting-02.jpg", pos: "center 20%" },
   { cat: "shooting", label: "Noir et blanc — conteneur & Mercedes", src: "shooting-03.jpg", pos: "center 25%" },
-  { cat: "shooting", label: "Garde haute sur le conteneur", src: "shooting-04.jpg", pos: "center 25%" },
+  { cat: "mma", label: "Garde haute sur le conteneur", src: "shooting-04.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Silhouette sur le conteneur, noir et blanc", src: "shooting-05.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Shooting équipe — terrain", src: "shooting-06.jpg", pos: "center 25%" },
   { cat: "shooting", label: "Shooting équipe — devant la fresque", src: "shooting-07.jpg", pos: "center 20%" },
