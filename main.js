@@ -146,7 +146,7 @@ function openSingleImage(src, caption){
   lightbox.classList.add("lightbox--single");
   lbImg.src = src;
   lbImg.alt = caption || "";
-  lbCaption.textContent = caption || "";
+  lbCaption.textContent = "";
   lightbox.classList.add("is-open");
   document.body.style.overflow = "hidden";
 }
