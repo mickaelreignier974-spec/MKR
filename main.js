@@ -51,6 +51,7 @@ const PORTFOLIO_DATA = [
   { cat: "mariage", label:"3", src: "mariage-03.jpg", pos: "center 25%" },
   { cat: "mariage", label:"4", src: "mariage-04.jpg", pos: "center 20%" },
   { cat: "mariage", label:"5", src: "mariage-05.jpg", pos: "center 20%" }
+];
 
 /* ---------- 2. Rendu du portfolio ---------- */
 function renderPortfolio(){
