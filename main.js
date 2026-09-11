@@ -155,7 +155,7 @@ function renderLightbox(){
   const item = PORTFOLIO_DATA[lbIndex];
   lbImg.src = item.src;
   lbImg.alt = item.label || "";
-  lbCaption.textContent = item.label || "";
+  lbCaption.textContent = "";
 }
 
 function closeLightbox(){
