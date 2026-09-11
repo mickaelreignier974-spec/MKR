@@ -46,7 +46,7 @@ const PORTFOLIO_DATA = [
   { cat: "mariage", label: "Cortège sous les ombrelles", src: "mariage-01.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Regards, noir et blanc", src: "mariage-02.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Portrait — lunettes miroir", src: "mariage-03.jpg", pos: "center 25%" },
-  { cat: "mariage", label: "Fille sourire", src: "mariage-04.jpg", pos: "center 20%" },
+  { cat: "mariage", label: "Sourire", src: "mariage-04.jpg", pos: "center 20%" },
   { cat: "mariage", label: "Petite fille", src: "mariage-05.jpg", pos: "center 20%" },
 ];
 
