@@ -769,3 +769,71 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
 }
+/* =========================================
+   MKR — FILIGRANE HERO
+   ========================================= */
+
+.hero__text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__watermark {
+  position: absolute;
+  top: -230px;
+  left: -15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.hero__watermark span {
+  font-family: "Fraunces", serif;
+  font-size: clamp(140px, 15vw, 240px);
+  font-weight: 500;
+  line-height: 0.75;
+  letter-spacing: -0.08em;
+
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.055);
+
+  opacity: 0.9;
+}
+
+.hero__watermark small {
+  margin-top: 18px;
+  margin-left: 12px;
+
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.42em;
+
+  color: rgba(255, 255, 255, 0.13);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .hero__watermark {
+    top: -155px;
+    left: 0;
+  }
+
+  .hero__watermark span {
+    font-size: clamp(100px, 25vw, 170px);
+  }
+
+  .hero__watermark small {
+    margin-top: 12px;
+    font-size: 8px;
+  }
+
+}
