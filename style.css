@@ -85,6 +85,43 @@ a{ color: inherit; text-decoration: none; }
 .view.active{ display:block; }
 .view.is-visible{ opacity: 1; }
 
+
+/* =========================================================
+   CORRECTIF NAVIGATION DES PAGES
+   =========================================================
+   Si Prestations est active, on masque complètement Accueil.
+   Cela empêche les 4 blocs Sport / Bleed / Shooting / Mariage
+   de rester visibles au-dessus de Prestations.
+   ========================================================= */
+
+body:has(#prestations.active) #accueil{
+  display: none !important;
+}
+
+
+/* Sécurité pour les autres pages :
+   une seule page reste visible à la fois même si plusieurs
+   éléments ont accidentellement la classe "active". */
+
+body:has(#portfolio.active) #accueil,
+body:has(#portfolio.active) #prestations{
+  display: none !important;
+}
+
+body:has(#apropos.active) #accueil,
+body:has(#apropos.active) #prestations,
+body:has(#apropos.active) #portfolio{
+  display: none !important;
+}
+
+body:has(#contact.active) #accueil,
+body:has(#contact.active) #prestations,
+body:has(#contact.active) #portfolio,
+body:has(#contact.active) #apropos{
+  display: none !important;
+}
+
+
 .view__head{ margin-bottom: 2.4rem; max-width: 640px; }
 
 .eyebrow{
@@ -240,6 +277,7 @@ h1, h2, h3{ font-family: var(--font-display); font-weight: 500; margin: 0 0 0.6r
 .lightbox__nav--next{ right: 0.5rem; }
 /* mode "photo isolée" : pas de flèches de navigation */
 .lightbox--single .lightbox__nav{ display:none; }
+
 @media (max-width: 680px){
   .lightbox__nav{ font-size:2.2rem; padding:0.4rem 0.6rem; }
   .lightbox__caption{ bottom: 1rem; padding: 0 3rem; }
@@ -308,6 +346,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     background: var(--bg); padding: 6rem 1.5rem 2rem; gap:1.5rem;
     transform: translateY(-100%); transition: transform 0.35s ease;
   }
+
   .nav__links.is-open{ transform: translateY(0); }
   .nav__toggle{ display:flex; }
   .proof-sheet{ grid-template-columns: 1fr; }
@@ -744,6 +783,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 
 }
+
 .hero-signature {
   margin-top: 32px;
   display: flex;
@@ -769,6 +809,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* =========================================
    MKR — FILIGRANE HERO
    ========================================= */
@@ -836,4 +877,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     font-size: 8px;
   }
 
+}
+
+
+/* =========================================================
+   CORRECTIF FINAL — PRESTATIONS
+   =========================================================
+   À laisser tout en bas pour être prioritaire.
+   Ne modifie aucun autre élément du design.
+   ========================================================= */
+
+body:has(#prestations.active) #accueil {
+  display: none !important;
+}
+
+body:has(#prestations.active) #accueil .themes-strip {
+  display: none !important;
+}
+
+body:has(#prestations.active) #accueil .hero {
+  display: none !important;
 }
