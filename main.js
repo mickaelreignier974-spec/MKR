@@ -10,7 +10,7 @@
    la vignette prend le cadrage portrait standard. */
 const PORTFOLIO_DATA = [
   { cat: "sport", label:"1", src: "walid.JPEG", pos: "center 20%" },
-  { cat: "sport", label:"2", src: "mel.JPEG", pos: "center 20%" },
+  { cat: "sport", label:"2", src: "melv.JPEG", pos: "center 20%" },
   { cat: "sport", label:"3", src: "sport-01.jpg", pos: "center 20%" },
   { cat: "sport", label:"4", src: "sport-02.jpg", pos: "center 15%" },
   { cat: "sport", label:"5", src: "sport-03.jpg", pos: "center 15%" },
